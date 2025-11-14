@@ -1,7 +1,7 @@
 # TaskMasters - Backend
 
 API REST para la aplicación de gestión de tareas con técnica Pomodoro.
-URL: https://backend-taskmasters.onrender.com
+URL: https://backend-taskmasters-production.up.railway.app
 
 ## 🚀 Características
 
@@ -48,7 +48,17 @@ JWT_SECRET=tu_jwt_secret_super_seguro
 PORT=3000
 ```
 
-## 🔗 API Endpoints
+## � Capturas de Pantalla
+
+### API en Funcionamiento
+![API Funcionando](./screens/API.png)
+*Pruebas de endpoints de la API mostrando respuestas exitosas de autenticación y gestión de tareas*
+
+### Logs del Servidor
+![Logs del Servidor](./screens/logs.png)
+*Logs del servidor en Railway mostrando requests procesados y estado saludable de la aplicación*
+
+## �🔗 API Endpoints
 
 ### Autenticación
 - `POST /api/auth/register` - Registrar usuario
@@ -72,6 +82,11 @@ PORT=3000
 - `GET /api/pomodoros/today` - Pomodoros del día
 - `POST /api/pomodoros` - Registrar pomodoro
 - `GET /api/pomodoros/stats` - Estadísticas
+
+## 🚀 Ver el proyecto en vivo
+
+- **Frontend**: [(https://front-end-task-masters.vercel.app/login)]
+- **Backend**: [(https://backend-taskmasters-production.up.railway.app)]
 
 
 ## 🤝 Contribuir
