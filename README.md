@@ -47,14 +47,6 @@ JWT_SECRET=tu_jwt_secret_super_seguro
 PORT=3000
 ```
 
-## 📊 Base de Datos
-
-Ejecutar el script SQL incluido para crear las tablas:
-
-```sql
--- Ver database.sql para el esquema completo
-```
-
 ## 🔗 API Endpoints
 
 ### Autenticación
@@ -80,15 +72,6 @@ Ejecutar el script SQL incluido para crear las tablas:
 - `POST /api/pomodoros` - Registrar pomodoro
 - `GET /api/pomodoros/stats` - Estadísticas
 
-## 🏗️ Estructura del Proyecto
-
-```
-src/
-├── config/          # Configuraciones (DB, Auth)
-├── controllers/     # Lógica de controladores
-├── routes/          # Definición de rutas
-└── services/        # Lógica de negocio
-```
 
 ## 🤝 Contribuir
 
@@ -98,10 +81,8 @@ src/
 4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
 5. Crear un Pull Request
 
-## 📝 Licencia
+## 💬 Contacto
 
-Este proyecto está bajo la Licencia MIT.
+Si tenés alguna pregunta sobre el proyecto o querés saber más sobre la implementación, no dudes en contactarme.
 
----
-
-Desarrollado con ❤️ por Martin Basile
+**Desarrollado con ❤️ para la UTN** 🎓
