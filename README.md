@@ -1,6 +1,18 @@
 # TaskMasters - Backend
 
-API REST para la aplicación de gestión de tareas con técnica Pomodoro.
+API REST para la aplicaci## 📸 Capturas de Pantalla
+
+### Base de Datos MySQL
+![Base de Datos](./screens/BaseSQL.png)
+*Estructura de la base de datos mostrando las tablas principales: usuarios, tareas, categorías y pomodoros con sus relaciones*
+
+### API en Funcionamiento
+![API Funcionando](./screens/API.png)
+*Pruebas de endpoints de la API mostrando respuestas exitosas de autenticación y gestión de tareas*
+
+### Logs del Servidor
+![Logs del Servidor](./screens/logs.png)
+*Logs del servidor en Railway mostrando requests procesados y estado saludable de la aplicación*tión de tareas con técnica Pomodoro.
 URL: https://backend-taskmasters-production.up.railway.app
 
 ## 🚀 Características
@@ -47,16 +59,6 @@ DB_NAME=taskmaster_db
 JWT_SECRET=tu_jwt_secret_super_seguro
 PORT=3000
 ```
-
-## � Capturas de Pantalla
-
-### API en Funcionamiento
-![API Funcionando](./screens/API.png)
-*Pruebas de endpoints de la API mostrando respuestas exitosas de autenticación y gestión de tareas*
-
-### Logs del Servidor
-![Logs del Servidor](./screens/logs.png)
-*Logs del servidor en Railway mostrando requests procesados y estado saludable de la aplicación*
 
 ## �🔗 API Endpoints
 
