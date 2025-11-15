@@ -35,9 +35,35 @@ const startServer = async () => {
   // Probar conexión a la base de datos
   await testConnection();
   
-  app.listen(PORT, () => {
+  const server = app.listen(PORT, () => {
     console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
   });
+
+  // Manejo adecuado de señales para shutdown graceful
+  const gracefulShutdown = (signal) => {
+    console.log(`\n📡 Recibida señal ${signal}. Cerrando servidor...`);
+    
+    server.close((err) => {
+      console.log('🛑 Servidor cerrado correctamente');
+      
+      if (err) {
+        console.error('❌ Error al cerrar el servidor:', err);
+        process.exit(1);
+      }
+      
+      process.exit(0);
+    });
+
+    // Forzar cierre después de 10 segundos
+    setTimeout(() => {
+      console.log('⚠️  Forzando cierre del servidor...');
+      process.exit(1);
+    }, 10000);
+  };
+
+  // Escuchar señales de cierre
+  process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
+  process.on('SIGINT', () => gracefulShutdown('SIGINT'));
 };
 
 startServer();

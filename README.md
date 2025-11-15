@@ -1,6 +1,9 @@
 # TaskMasters - Backend
 
-API REST para la aplicaci## 📸 Capturas de Pantalla
+API REST para la aplicación de tareas con técnica Pomodoro.
+URL: https://backend-taskmasters-production.up.railway.app
+
+## 📸 Capturas de Pantalla
 
 ### Base de Datos MySQL
 ![Base de Datos](./screens/BaseSQL.png)
@@ -12,8 +15,7 @@ API REST para la aplicaci## 📸 Capturas de Pantalla
 
 ### Logs del Servidor
 ![Logs del Servidor](./screens/logs.png)
-*Logs del servidor en Railway mostrando requests procesados y estado saludable de la aplicación*tión de tareas con técnica Pomodoro.
-URL: https://backend-taskmasters-production.up.railway.app
+*Logs del servidor en Railway mostrando requests procesados y estado saludable de la aplicación*
 
 ## 🚀 Características
 
